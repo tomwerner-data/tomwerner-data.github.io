@@ -2,35 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tom Werner | Business Intelligence Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tom Werner | Senior Business Intelligence Analyst</title>
 
   <!-- Prevent search engine indexing -->
   <meta name="robots" content="noindex, nofollow">
 
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 60px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    h1, h2 { line-height: 1.3; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .nav { margin-bottom: 40px; }
-    .nav a { margin-right: 20px; font-weight: bold; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-  </div>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">TW</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="about.html">Full About</a>
+        <a class="pill" href="portfolio.html">Portfolio</a>
+      </div>
+    </nav>
+  </header>
 
-  <h1>Tom Werner</h1>
-  <h2>Business Intelligence Analyst</h2>
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <img class="avatar" src="assets/tom.jpg" alt="Photo of Tom Werner" />
+      </div>
 
-  <p>I build scalable analytics solutions, modernize BI platforms, and translate complex data into executive-ready insights.</p>
+      <div class="hero-right">
+        <p class="kicker">Senior Business Intelligence Analyst</p>
+        <h1>Hi, I’m Tom Werner.</h1>
+        <p class="lead">
+          I specialize in modernizing BI ecosystems, enabling self-serve analytics, and translating complex data into
+          executive-ready insights across cross-functional teams.
+        </p>
 
-  <p><strong>Links:</strong><br>
-    <a href="https://www.linkedin.com/in/tom-werner/">LinkedIn</a> ·
-    <a href="https://github.com/">GitHub</a>
-  </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="https://www.linkedin.com/in/tom-werner/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/tomwerner-data" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <p class="fineprint">
+          All work samples use simulated or publicly available datasets to demonstrate approach and problem-solving.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Featured work</h2>
+        <p>Recruiter-friendly case studies: metrics, modeling choices, and outcomes.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Executive Performance Dashboard</h3>
+          <p>Dashboard case study focused on KPI definitions, stakeholder questions, and design choices.</p>
+          <div class="tags">
+            <span>Tableau/Power BI</span><span>Metrics</span><span>UX</span>
+          </div>
+          <a class="card-link" href="portfolio.html">View (coming soon) →</a>
+        </article>
+
+        <article class="card">
+          <h3>SQL Cohort & Retention Analysis</h3>
+          <p>CTEs, window functions, and business logic to explain retention behavior and drivers.</p>
+          <div class="tags">
+            <span>SQL</span><span>Modeling</span><span>Storytelling</span>
+          </div>
+          <a class="card-link" href="portfolio.html">View (coming soon) →</a>
+        </article>
+
+        <article class="card">
+          <h3>Python Reporting Automation</h3>
+          <p>Automated workflow that turns data into a repeatable reporting output (slides/report).</p>
+          <div class="tags">
+            <span>Python</span><span>APIs</span><span>Automation</span>
+          </div>
+          <a class="card-link" href="portfolio.html">View (coming soon) →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>A growing set of portfolio pieces across BI, SQL, modeling, and automation.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Data Model for Self-Serve BI</h3>
+          <p>Star schema, metric definitions, grain decisions, and governance practices.</p>
+          <div class="tags"><span>Data modeling</span><span>Semantic layer</span></div>
+          <a class="card-link" href="portfolio.html">Details →</a>
+        </article>
+
+        <article class="card">
+          <h3>BI Migration Playbook</h3>
+          <p>A practical framework for migrating dashboards and enabling adoption at scale.</p>
+          <div class="tags"><span>Enablement</span><span>Change management</span></div>
+          <a class="card-link" href="portfolio.html">Details →</a>
+        </article>
+
+        <article class="card">
+          <h3>Pricing / Promo Analytics (Public Data)</h3>
+          <p>Analysis template for performance benchmarking and business insights.</p>
+          <div class="tags"><span>Analytics</span><span>KPIs</span></div>
+          <a class="card-link" href="portfolio.html">Details →</a>
+        </article>
+
+        <article class="card">
+          <h3>Automation: Data → Slides</h3>
+          <p>Repeatable reporting workflow that reduces manual effort and improves consistency.</p>
+          <div class="tags"><span>Python</span><span>Reporting</span></div>
+          <a class="card-link" href="portfolio.html">Details →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <p>BI modernization, governed metrics, and strong stakeholder partnership.</p>
+      </div>
+
+      <div class="card">
+        <ul class="bullets">
+          <li>Led BI modernization work after an acquisition; migrated and rebuilt reporting for self-serve use.</li>
+          <li>Strong in SQL (CTEs, window functions), data modeling, dashboards, and executive-ready storytelling.</li>
+          <li>Tooling: ThoughtSpot, Tableau, Databricks, SQL, AWS/S3, Jira, Confluence, GitHub.</li>
+        </ul>
+        <a class="card-link" href="about.html">Read the full version →</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Best way to reach me is LinkedIn or email.</p>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:wernertw@outlook.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/tom-werner/" target="_blank" rel="noreferrer">Message on LinkedIn</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Tom Werner · Built on GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

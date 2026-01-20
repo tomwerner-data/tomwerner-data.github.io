@@ -2,41 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tom Werner | Business Intelligence Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tom Werner | About</title>
 
-  <!-- Prevent search engine indexing -->
   <meta name="robots" content="noindex, nofollow">
-
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 60px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-    h1, h2 { line-height: 1.3; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .nav { margin-bottom: 40px; }
-    .nav a { margin-right: 20px; font-weight: bold; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
-  </div>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html#top">TW</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="pill" href="about.html">Full About</a>
+        <a class="pill" href="portfolio.html">Portfolio</a>
+      </div>
+    </nav>
+  </header>
 
-  <h1>About</h1>
+  <main class="container">
+    <section class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <p>Senior BI Analyst focused on BI modernization, self-serve analytics, and executive-ready insights.</p>
+      </div>
 
-<p>
-  I’m Tom Werner, a Business Intelligence Analyst with 5+ years of experience building scalable analytics solutions,
-  modernizing BI platforms, and enabling self-service reporting across cross-functional teams.
-</p>
+      <article class="card">
+        <h3>What I do</h3>
+        <p>
+          I build scalable analytics solutions, modernize BI ecosystems, and translate complex data into decision-ready insights
+          for leaders and cross-functional teams.
+        </p>
+      </article>
 
-<p>
-  At Flipp, I helped lead BI modernization following an acquisition, including migrating legacy dashboards and rebuilding
-  high-trust reporting experiences with governed metrics and strong stakeholder alignment. I’m strongest in SQL, dashboarding,
-  data modeling, and turning business questions into clear, decision-ready insights.
-</p>
+      <article class="card" style="margin-top:14px;">
+        <h3>How I work</h3>
+        <ul class="bullets">
+          <li>Start with the decision: align stakeholders on KPIs, definitions, and the “why.”</li>
+          <li>Model for trust: clear grain, governed metrics, and reusable logic.</li>
+          <li>Build for adoption: fast, intuitive dashboards + documentation + enablement.</li>
+        </ul>
+      </article>
 
-<p>
-  I’m currently building a public portfolio using simulated and publicly available datasets to demonstrate my approach to
-  analytics, including dashboard design, SQL analysis, and Python automation.
-</p>
+      <article class="card" style="margin-top:14px;">
+        <h3>Core strengths</h3>
+        <ul class="bullets">
+          <li>SQL (CTEs, window functions), data modeling, dashboarding, and analytics enablement</li>
+          <li>Cross-functional partnership (Product, Sales, Finance, Marketing) and executive communication</li>
+          <li>Modern analytics stacks (Databricks, BI tools, cloud storage, governance practices)</li>
+        </ul>
+      </article>
+
+      <article class="card" style="margin-top:14px;">
+        <h3>Toolbox</h3>
+        <p class="fineprint" style="margin-top:0;">
+          SQL · Databricks · ThoughtSpot · Tableau · Excel · Scala · AWS/S3 · Jira · Confluence · GitHub
+        </p>
+      </article>
+
+      <div class="cta-row" style="margin-top:14px;">
+        <a class="btn" href="index.html">← Back to Home</a>
+        <a class="btn primary" href="portfolio.html">View Portfolio →</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
